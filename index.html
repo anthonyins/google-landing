@@ -4,34 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google Landing Page</title>
-    <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Google Landing Page</title>
   </head>
   <body>
     <header class="header">
       <div class="header__left">
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Store</a></li>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="">About</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">Store</a>
+          </li>
         </ul>
       </div>
 
       <div class="header__right">
-        <ul>
-          <li><a href="">Gmail</a></li>
-          <li><a href="">Images</a></li>
-          <li>
-            <a href="">
+        <ul class="header__tabs">
+          <li class="header__item">
+            <a class="header__link" href="">Gmail</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">Images</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">
               <img
                 src="./images/appicon.png"
                 alt=""
-                class="header__right--appicon"
-              />
+                class="header__right--appicon" />
             </a>
           </li>
-          <li>
-            <button class="header__right--button">Sign In</button>
+          <!-- <li class="header__item">
+                <a href="" class="header__link"><img src="./images/avataaars.png" alt="" class="header__right--profile"></a>
+            </li> -->
+          <li class="header__item">
+            <a class="header__link" href="">
+              <button class="header__right--button">Sign In</button>
+            </a>
           </li>
         </ul>
       </div>
@@ -45,23 +57,23 @@
           src="./images/magnifying_glass.jpg"
           width="30px"
           alt=""
-          class="main__search-bar--magnifier"
-        />
+          class="main__search-bar--magnifier" />
 
         <!-- 2-INPUT -->
 
-        <input type="search" class="main__search-bar--input" />
+        <input type="search" class="main__search-bar--input" id="form-search" />
 
         <!-- 3-MICROPHONE -->
         <img
           src="./images/google_microphone.png"
           alt=""
-          class="main__search-bar--mic"
-        />
+          class="main__search-bar--mic" />
       </div>
 
       <div class="main__buttons">
-        <button class="main__buttons--left">Google Search</button>
+        <button class="main__buttons--left" id="searchBtn">
+          Google Search
+        </button>
 
         <button class="main__buttons--right">I'm Feeling Lucky</button>
       </div>
@@ -69,30 +81,40 @@
       <div class="main__language">
         <p>
           Other Languages you can use Google:
-          <a href="">English</a>
+          <a class="main__language--link" href="">English</a>
         </p>
       </div>
     </main>
-
-
-
     <footer class="footer">
-
-        <div class="footer__country">Turkey</div>
-
-        <div class="footer__bottom">
-            <ul class="footer__bottom--left">
-                <li><a href="">Advertising</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">How Search Works</a></li>
-            </ul>
-
-            <ul class="footer__bottom--right">
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Settings</a></li>
-            </ul>
+      <div class="footer__country">Turkey</div>
+      <div class="footer__bottom">
+        <div class="footer__bottom--left">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="">Advertising</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Business</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">How Search Works</a>
+            </li>
+          </ul>
         </div>
+        <div class="footer__bottom--right">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="">Privacy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
